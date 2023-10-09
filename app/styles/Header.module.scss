@@ -1,0 +1,25 @@
+@import "variables";
+
+.header {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+
+  .nav {
+    display: flex;
+    gap: 250px;
+
+    .link {
+      text-decoration: none;
+      color: $text;
+      font-size: $fst;
+      font-weight: 700;
+      transition: color ease-in-out 0.3s;
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+}
