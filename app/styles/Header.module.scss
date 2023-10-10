@@ -13,12 +13,12 @@
 
     .link {
       text-decoration: none;
-      color: $text;
+      color: $orange;
       font-size: $fst;
       font-weight: $bold;
       transition: color ease-in-out 0.3s;
       &:hover {
-        color: $hover;
+        color: $turquoise;
       }
     }
   }
