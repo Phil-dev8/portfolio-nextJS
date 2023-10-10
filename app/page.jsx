@@ -60,8 +60,8 @@ export default function Home() {
             dispose également d’un <span>bon relationnel</span> grâce à mon
             expérience de commerçant afin d'être à l’écoute des différentes
             cellules d’une entreprise me permettant de rapidement comprendre
-            leurs besoins. <br /> Je suis disponible pour un entretien pour vous
-            faire part de ma forte motivation ainsi que discuter de mon parcours
+            leurs besoins. Je suis disponible pour un entretien pour vous faire
+            part de ma forte motivation ainsi que discuter de mon parcours
             atypique et de mes compétences.
           </p>
         </div>
