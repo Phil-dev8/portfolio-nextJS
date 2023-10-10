@@ -10,7 +10,7 @@ import LinkedinSVG from "../SVG/LinkedinSVG/LinkedinSVG";
 function Socials() {
   return (
     <div className={styles.social}>
-      <a href="/CV-3W.pdf" target="blank">
+      <a href="/assets/CV-3W.pdf" target="blank">
         <CVSVG />
       </a>
       <Link href="https://github.com/Phil-dev8" target="blank">

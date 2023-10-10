@@ -1,7 +1,8 @@
 [
   {
     "name": "Vinted",
-    "img": "/assets/svg/vinted.svg",
+    "id": 1,
+    "img": "/assets/img/vinted.svg",
     "front-repo": "https://github.com/Phil-dev8/Vinted-homework-14-02",
     "back-repo": "",
     "production": "https://vinted-replica-by-phildev8.netlify.app/",
@@ -10,7 +11,8 @@
   },
   {
     "name": "Marvel",
-    "img": "/assets/svg/marvel.png",
+    "id": 2,
+    "img": "/assets/img/marvel.png",
     "front-repo": "https://github.com/Phil-dev8/frontend-marvel",
     "back-repo": "https://github.com/Phil-dev8/Backend-Marvel",
     "production": "https://marvel-phil-dev8.netlify.app/",
@@ -19,6 +21,7 @@
   },
   {
     "name": "Barret's",
+    "id": 3,
     "img": "",
     "front-repo": "",
     "back-repo": "",

@@ -1,13 +1,14 @@
 import React from "react";
-
 import ProjectCard from "../components/ProjectCard/ProjectCard.jsx";
-import data from "../data/projects.json";
+import styles from "../styles/Projects.module.scss";
 
 export default function page() {
   return (
     <div>
       <h1>Projets</h1>
-      <ProjectCard />
+      <div className={styles.container}>
+        <ProjectCard />
+      </div>
     </div>
   );
 }
