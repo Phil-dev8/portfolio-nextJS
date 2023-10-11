@@ -15,8 +15,8 @@ function CVSVG() {
 
   return (
     <svg
-      width="120px"
-      height="120px"
+      width="130px"
+      height="130px"
       viewBox="0 0 24.00 24.00"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

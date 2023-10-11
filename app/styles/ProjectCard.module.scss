@@ -29,8 +29,10 @@
       color: $orange;
       font-size: $fsm;
       font-weight: $classic;
-      // font-style: italic;
       @include link-transition;
+      &.last {
+        margin-bottom: 15px;
+      }
       &:hover {
         color: $turquoise;
       }
@@ -39,10 +41,14 @@
       color: $orange;
       font-size: $fsm;
       font-weight: $classic;
+      margin-bottom: 15px;
     }
     .ul {
       display: flex;
       flex-direction: column;
+      &.first {
+        margin-bottom: 15px;
+      }
 
       .li {
         font-size: $fsl;

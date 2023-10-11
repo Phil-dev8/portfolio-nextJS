@@ -18,6 +18,16 @@ $bold: 700;
 $classic: 500;
 $light: 300;
 
+/*TITLE-STYLE*/
+@mixin title {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: $bold;
+  font-size: $fsb;
+  color: $orange;
+  animation: color ease 0.7s infinite alternate;
+}
+
 /*MIXIN-ANIMATION*/
 @mixin link-transition {
   transition: color 0.7s ease;
@@ -30,6 +40,37 @@ $light: 300;
   }
   100% {
     color: $turquoise;
+  }
+}
+
+@keyframes left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes link {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
   }
 }
 

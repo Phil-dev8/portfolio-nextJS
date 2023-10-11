@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import data from "../../data/projects.json";
+import data from "../../assets/data/projects.json";
 import Image from "next/image";
 import styles from "../../styles/ProjectCard.module.scss";
 import Link from "next/link";
@@ -39,7 +39,7 @@ function ProjectCard() {
             ) : null}
             {project.production ? (
               <Link
-                className={styles.link}
+                className={`${styles.link} ${styles.last}`}
                 href={project.production}
                 target="blank"
               >
@@ -48,7 +48,7 @@ function ProjectCard() {
             ) : (
               <p className={styles.progress}>Travail en cours</p>
             )}
-            <ul className={styles.ul}>
+            <ul className={`${styles.ul} ${styles.first}`}>
               {project.technos.map((techno, index) => (
                 <li className={styles.li} key={index}>
                   {techno}

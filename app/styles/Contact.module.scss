@@ -1,0 +1,56 @@
+@import "variables";
+
+.title {
+  @include title;
+  animation: left 0.7s ease, color 0.7s ease-in-out infinite alternate;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 45px;
+
+  .form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: right 0.7s ease;
+
+    .input {
+      height: 2.5rem;
+      width: 35%;
+      outline: none;
+      border: $turquoise 2px dashed;
+      border-radius: 10px;
+      background-color: $primary;
+      color: $orange;
+      font-size: $fsm;
+      &::placeholder {
+        color: $orange;
+        font-size: $fsm;
+      }
+      &.textarea {
+        height: 20rem;
+      }
+    }
+
+    .send {
+      background-color: $primary;
+      color: $orange;
+      font-size: $fst;
+      border: dashed 2px $turquoise;
+      height: 2.5rem;
+      border-radius: 10px;
+      transition: color ease 0.7s, background-color ease 0.7s;
+      &:hover {
+        background-color: $orange;
+        border: $secondary 2px dashed;
+        color: $primary;
+        cursor: pointer;
+      }
+    }
+  }
+}

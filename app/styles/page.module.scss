@@ -15,7 +15,7 @@
     font-weight: $bold;
     text-align: center;
     color: $orange;
-    animation: left 1s ease, color 1s ease-in-out infinite alternate;
+    animation: left 0.7s ease, color 0.7s ease-in-out infinite alternate;
   }
 
   .presentation {
@@ -23,47 +23,16 @@
     font-size: $fst;
     text-align: justify;
     line-height: 35px;
-    animation: right 1s ease;
+    animation: right 0.7s ease;
     span,
     .link {
       color: $orange;
     }
     .link {
       color: $orange;
-      animation: link 1s infinite alternate;
+      animation: link 0.7s infinite alternate;
       text-decoration: none;
       font-style: italic;
     }
-  }
-}
-
-@keyframes left {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes right {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes link {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
   }
 }
