@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
+require("dotenv").config();
+
 const nextConfig = {
   env: {
-    PUBLIC_KEY: "RDhoNlipdJ3Sj21aG",
-    SERVICE_ID: "service_nq20l3j",
-    TEMPLATE_ID: "template_4cl6zen",
+    PUBLIC_KEY: process.env.PUBLIC_KEY,
+    SERVICE_ID: process.env.SERVICE_ID,
+    TEMPLATE_ID: process.env.TEMPLATE_ID,
   },
 };
 

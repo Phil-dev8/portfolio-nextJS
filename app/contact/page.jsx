@@ -18,6 +18,7 @@ export default function contact() {
   const templateID = process.env.TEMPLATE_ID;
   const publicKey = process.env.PUBLIC_KEY;
 
+  console.log(publicKey, templateID, serviceID);
   const mail = (data) => {
     emailjs
       .send(`${serviceID}`, `${templateID}`, data, `${publicKey}`)
