@@ -2,6 +2,7 @@ import "./styles/globals.scss";
 import { Georama } from "next/font/google";
 import Header from "./components/Header/Header";
 import Socials from "./components/Socials/Socials";
+import Footer from "./components/Footer/Footer";
 
 const georama = Georama({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Socials />
+        <Footer />
       </body>
     </html>
   );

@@ -48,14 +48,18 @@ function ProjectCard() {
             ) : (
               <p className={styles.progress}>Travail en cours</p>
             )}
-            <ul>
+            <ul className={styles.ul}>
               {project.technos.map((techno, index) => (
-                <li key={index}>{techno}</li>
+                <li className={styles.li} key={index}>
+                  {techno}
+                </li>
               ))}
             </ul>
-            <ul>
+            <ul className={styles.ul}>
               {project.description.map((desc, index) => (
-                <li key={index}>{desc}</li>
+                <li className={styles.li} key={index}>
+                  {desc}
+                </li>
               ))}
             </ul>
           </div>
