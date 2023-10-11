@@ -5,7 +5,7 @@ import styles from "../styles/Projects.module.scss";
 export default function page() {
   return (
     <div>
-      <h1>Projets</h1>
+      <h1 className={styles.title}>Projets réalisés</h1>
       <div className={styles.container}>
         <ProjectCard />
       </div>

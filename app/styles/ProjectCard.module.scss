@@ -1,4 +1,42 @@
+@import "variables";
+
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  padding: 20px;
+  gap: 20px;
+  border: solid 1px $orange;
+  border-radius: 30px;
+  background-color: $secondary;
+
+  .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    .name {
+      font-size: $fsb;
+      color: $turquoise;
+      font-weight: $bold;
+    }
+
+    .link {
+      text-decoration: none;
+      color: $orange;
+      font-size: $fsm;
+      font-weight: $classic;
+      @include link-transition;
+      &:hover {
+        color: $turquoise;
+      }
+    }
+    .progress {
+      color: $orange;
+      font-size: $fsm;
+      font-weight: $classic;
+    }
+  }
 }

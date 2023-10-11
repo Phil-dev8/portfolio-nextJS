@@ -6,8 +6,14 @@
     "front-repo": "https://github.com/Phil-dev8/Vinted-homework-14-02",
     "back-repo": "",
     "production": "https://vinted-replica-by-phildev8.netlify.app/",
-    "technos": "",
-    "description": []
+    "technos": ["React.js", "Netlify"],
+    "description": [
+      "Paiement avec Stripe",
+      "Requetes API",
+      "Filtres",
+      "Authentification",
+      "Mise en ligne offres"
+    ]
   },
   {
     "name": "Marvel",
@@ -16,8 +22,20 @@
     "front-repo": "https://github.com/Phil-dev8/frontend-marvel",
     "back-repo": "https://github.com/Phil-dev8/Backend-Marvel",
     "production": "https://marvel-phil-dev8.netlify.app/",
-    "technos": "",
-    "description": []
+    "technos": [
+      "React.js",
+      "Node.js",
+      "Mongo DB",
+      "Express.js",
+      "Netlify",
+      "Northflank"
+    ],
+    "description": [
+      "Authentification",
+      "Gestion des favoris",
+      "Recherche",
+      "Création API"
+    ]
   },
   {
     "name": "Barret's",
@@ -26,7 +44,7 @@
     "front-repo": "",
     "back-repo": "",
     "production": "",
-    "technos": "",
-    "description": []
+    "technos": ["Next.js"],
+    "description": ["Création d'un site e-commerce pour société d'outillage"]
   }
 ]

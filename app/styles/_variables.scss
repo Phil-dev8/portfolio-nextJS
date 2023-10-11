@@ -1,17 +1,40 @@
-/*COLOR */
+/*COLOR*/
 
 $primary: #003549;
 $secondary: #005b61;
 $turquoise: #00bbc2;
 $orange: #ff9200;
 
-/*FONT-SIZE */
+/*FONT-SIZE*/
+
 $fsb: 48px;
 $fst: 24px;
 $fsm: 18px;
 $fsl: 12px;
 
-/*FONT-Weight*/
+/*FONT-WEIGHT*/
+
 $bold: 700;
 $classic: 500;
 $light: 300;
+
+/*MIXIN-ANIMATION*/
+@mixin link-transition {
+  transition: color 0.7s ease;
+}
+
+/*KEYFRAME-ANIMATION*/
+@keyframes color {
+  0% {
+    color: $orange;
+  }
+  100% {
+    color: $turquoise;
+  }
+}
+
+/*MEDIA-QUERY*/
+$phone: 478px;
+$tablet: 768px;
+$desktop: 1600px;
+$large-desktop: 1920px;
