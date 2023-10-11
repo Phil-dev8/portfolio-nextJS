@@ -1,5 +1,4 @@
 "use client";
-// require("dotenv").config();
 import React from "react";
 import { useState } from "react";
 import styles from "../styles/Contact.module.scss";
@@ -19,14 +18,9 @@ export default function contact() {
   const templateID = process.env.TEMPLATE_ID;
   const publicKey = process.env.PUBLIC_KEY;
 
-  console.log(publicKey);
-  console.log(serviceID);
-  console.log(templateID);
-  console.log("coucou");
-
   const mail = (data) => {
     emailjs
-      .send(`service_nq20l3j`, `template_4cl6zen`, data, `RDhoNlipdJ3Sj21aG`)
+      .send(`${serviceID}`, `${templateID}`, data, `${publicKey}`)
       .then((response) => {
         console.log(response);
       })

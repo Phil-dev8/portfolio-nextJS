@@ -41,8 +41,10 @@
       background-color: $primary;
       color: $orange;
       font-size: $fst;
+      // font-weight: $bold;
       border: dashed 2px $turquoise;
       height: 2.5rem;
+      width: 35%;
       border-radius: 10px;
       transition: color ease 0.7s, background-color ease 0.7s;
       &:hover {
