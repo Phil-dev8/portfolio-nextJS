@@ -28,13 +28,13 @@
       text-decoration: none;
       color: $orange;
       font-size: $fsm;
-      font-weight: $classic;
+      font-weight: $bold;
       @include link-transition;
       &.last {
         margin-bottom: 15px;
       }
       &:hover {
-        color: $turquoise;
+        color: $primary;
       }
     }
     .progress {

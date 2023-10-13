@@ -24,7 +24,7 @@
       },
       {
         "techno": "Next.js",
-        "svg": "/assets/img/svg/HTML.svg"
+        "svg": "/assets/img/svg/NEXT.svg"
       },
       {
         "techno": "Node.js",
@@ -45,11 +45,11 @@
     "items": [
       {
         "techno": "PHP",
-        "svg": "/assets/img/PHP.svg"
+        "svg": "/assets/img/svg/PHP.svg"
       },
       {
         "techno": "React Native",
-        "svg": "/assets/img/svg/NATIVE.svg"
+        "svg": "/assets/img/svg/REACT.svg"
       },
       {
         "techno": "My SQL",

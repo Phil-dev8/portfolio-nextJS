@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
+  .img {
+    animation: display 5s ease;
+  }
   .p {
     color: $orange;
   }

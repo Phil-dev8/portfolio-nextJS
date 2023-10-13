@@ -5,21 +5,38 @@ import data from "../assets/data/skills.json";
 import SkillCard from "../components/SkillCard/SkillCard";
 
 export default function skills() {
-  //   console.log(data);
   return (
     <>
+      <h1 className={styles["main-title"]}>Skills</h1>
       <div className={styles.container}>
-        <h1 className={styles.title}>Skills</h1>
         {data.map((category, categoryIndex) => {
+          const left = categoryIndex === 0 || categoryIndex === 2;
           return (
-            <div key={categoryIndex}>
-              <h2>{category.title}</h2>
-              <div className={styles["category-container"]}>
+            <div
+              className={`${styles["category-container"]} ${
+                left ? styles.left : styles.right
+              }`}
+              key={categoryIndex}
+            >
+              <h2 className={styles["second-title"]}>{category.title}</h2>
+              <div className={styles["skill-container"]}>
                 <SkillCard items={category.items} />
               </div>
             </div>
           );
         })}
+        <div className={styles.certifs}>
+          <h3 className={styles.h3}>Certifications Udemy</h3>
+          <a href="/assets/certifications/JS.pdf" target="blank">
+            Javascript
+          </a>
+          <a href="/assets/certifications/GIT.pdf" target="blank">
+            GIT
+          </a>
+          <a href="/assets/certifications/NEXT.pdf" target="blank">
+            Next.js
+          </a>
+        </div>
       </div>
     </>
   );

@@ -9,7 +9,13 @@ export default function SkillCard({ items }) {
       {items.map((item, itemIndex) => {
         return (
           <div key={itemIndex} className={styles.container}>
-            <Image src={item.svg} width={50} height={50} alt={item.techno} />
+            <Image
+              src={item.svg}
+              width={60}
+              height={60}
+              alt={item.techno}
+              className={styles.img}
+            />
             <p className={styles.p}>{item.techno}</p>
           </div>
         );

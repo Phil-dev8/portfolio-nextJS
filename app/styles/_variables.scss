@@ -85,6 +85,14 @@ $light: 300;
   }
 }
 
+@keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*MEDIA-QUERY*/
 $phone: 478px;
 $tablet: 768px;
