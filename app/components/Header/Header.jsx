@@ -12,6 +12,9 @@ function Header() {
         <Link className={styles.link} href="/projects">
           Projects
         </Link>
+        <Link className={styles.link} href="/skills">
+          Skills
+        </Link>
         <Link className={styles.link} href="/contact">
           Contact
         </Link>

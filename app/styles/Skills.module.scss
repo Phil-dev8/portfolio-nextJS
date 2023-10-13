@@ -1,0 +1,13 @@
+@import "variables";
+
+.title {
+  @include title;
+  animation: left 0.7s ease, color 0.7s ease-in-out infinite alternate;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  border: solid 2px yellow;
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Technos les mieux maitrisées",
+    "items": [
+      {
+        "techno": "HTML 5",
+        "svg": "/assets/img/svg/HTML.svg"
+      },
+      {
+        "techno": "CSS 3",
+        "svg": "/assets/img/svg/CSS.svg"
+      },
+      {
+        "techno": "SCSS",
+        "svg": "/assets/img/svg/SASS.svg"
+      },
+      {
+        "techno": "JavaScript",
+        "svg": "/assets/img/svg/JS.svg"
+      },
+      {
+        "techno": "React.js",
+        "svg": "/assets/img/svg/REACT.svg"
+      },
+      {
+        "techno": "Next.js",
+        "svg": "/assets/img/svg/HTML.svg"
+      },
+      {
+        "techno": "Node.js",
+        "svg": "/assets/img/svg/NODE.svg"
+      },
+      {
+        "techno": "Mongo DB",
+        "svg": "/assets/img/svg/MONGODB.svg"
+      },
+      {
+        "techno": "GIT",
+        "svg": "/assets/img/svg/GIT.svg"
+      }
+    ]
+  },
+  {
+    "title": "Connaissances",
+    "items": [
+      {
+        "techno": "PHP",
+        "svg": "/assets/img/PHP.svg"
+      },
+      {
+        "techno": "React Native",
+        "svg": "/assets/img/svg/NATIVE.svg"
+      },
+      {
+        "techno": "My SQL",
+        "svg": "/assets/img/svg/MYSQL.svg"
+      },
+      {
+        "techno": "WordPress",
+        "svg": "/assets/img/svg/WORDPRESS.svg"
+      }
+    ]
+  },
+  {
+    "title": "À venir",
+    "items": [
+      {
+        "techno": "TypeScript",
+        "svg": "/assets/img/svg/TYPESCRIPT.svg"
+      },
+      {
+        "techno": "Swift",
+        "svg": "/assets/img/svg/SWIFT.svg"
+      },
+      {
+        "techno": "Python",
+        "svg": "/assets/img/svg/PYTHON.svg"
+      }
+    ]
+  },
+  {
+    "title": "Outils",
+    "items": [
+      {
+        "techno": "VS Code",
+        "svg": "/assets/img/svg/VSCODE.svg"
+      },
+      {
+        "techno": "Figma",
+        "svg": "/assets/img/svg/FIGMA.svg"
+      },
+      {
+        "techno": "Adobe XD",
+        "svg": "/assets/img/svg/ADOBE.svg"
+      },
+      {
+        "techno": "Forest Admin",
+        "svg": "/assets/img/svg/FOREST.svg"
+      },
+      {
+        "techno": "Gulp",
+        "svg": "/assets/img/svg/GULP.svg"
+      }
+    ]
+  }
+]

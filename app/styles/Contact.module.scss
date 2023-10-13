@@ -32,6 +32,12 @@
         color: $orange;
         font-size: $fsm;
       }
+      &:focus {
+        border: dashed 2px $orange;
+      }
+      &:focus::placeholder {
+        color: $turquoise;
+      }
       &.textarea {
         height: 20rem;
       }
@@ -41,7 +47,7 @@
       background-color: $primary;
       color: $orange;
       font-size: $fst;
-      // font-weight: $bold;
+      font-weight: $bold;
       border: dashed 2px $turquoise;
       height: 2.5rem;
       width: 35%;
