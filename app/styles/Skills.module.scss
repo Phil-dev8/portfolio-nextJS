@@ -1,8 +1,6 @@
 @import "variables";
 .main-title {
   @include title;
-  animation: left 0.7s ease, color 0.7s ease-in-out infinite alternate;
-  margin-bottom: 50px;
 }
 .container {
   display: flex;
