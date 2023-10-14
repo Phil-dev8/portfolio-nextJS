@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import styles from "../../../styles/LinkedinSVG.module.scss";
 
 function LinkedinSVG() {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,9 +15,8 @@ function LinkedinSVG() {
   };
   return (
     <svg
-      height={100}
+      className={styles.svg}
       viewBox="0 0 72 72"
-      width={100}
       xmlns="http://www.w3.org/2000/svg"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

@@ -2,7 +2,6 @@
 
 .title {
   @include title;
-  animation: left 0.7s ease, color 0.7s ease-in-out infinite alternate;
 }
 .container {
   display: flex;
@@ -11,4 +10,16 @@
   margin: 0 auto;
   width: 70%;
   animation: right 0.7s ease;
+}
+
+@media (max-width: $phone) {
+  .title {
+    @include title-mobile;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
 }

@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "../styles/Contact.module.scss";
 import emailjs from "emailjs-com";
 
-export default function contact() {
+export default function Contact() {
   const [firstName, setfirstName] = useState("");
   const [lastName, setlastName] = useState("");
   const [email, setEmail] = useState("");

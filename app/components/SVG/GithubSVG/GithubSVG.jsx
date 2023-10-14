@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import styles from "../../../styles/GithubSVG.module.scss";
 
 function GithubSVG() {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,8 +15,7 @@ function GithubSVG() {
   };
   return (
     <svg
-      width={100}
-      height={100}
+      className={styles.svg}
       viewBox="0 0 1024 1024"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

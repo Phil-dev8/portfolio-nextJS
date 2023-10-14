@@ -4,7 +4,7 @@ import styles from "../styles/Skills.module.scss";
 import data from "../assets/data/skills.json";
 import SkillCard from "../components/SkillCard/SkillCard";
 
-export default function skills() {
+export default function Skills() {
   return (
     <>
       <div className={styles.certifs}>
@@ -37,6 +37,18 @@ export default function skills() {
             </div>
           );
         })}
+        <div className={styles["certifs-mobile"]}>
+          <h3 className={styles.h3}>Certifications Udemy ( PDF )</h3>
+          <a href="/assets/certifications/JS.pdf" target="blank">
+            Javascript
+          </a>
+          <a href="/assets/certifications/GIT.pdf" target="blank">
+            GIT
+          </a>
+          <a href="/assets/certifications/NEXT.pdf" target="blank">
+            Next.js
+          </a>
+        </div>
       </div>
     </>
   );

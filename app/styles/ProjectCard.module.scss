@@ -59,3 +59,18 @@
     }
   }
 }
+@media (max-width: $phone) {
+  .card {
+    width: 80%;
+    margin-top: 16px;
+    .infos {
+      justify-content: center;
+      .name {
+        font-size: $fst;
+      }
+      .link {
+        font-size: $fsm;
+      }
+    }
+  }
+}

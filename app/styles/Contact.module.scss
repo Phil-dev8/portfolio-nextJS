@@ -62,3 +62,27 @@
     }
   }
 }
+
+@media (max-width: $phone) {
+  .title {
+    @include title-mobile;
+  }
+  .container {
+    margin: 0;
+    width: 100%;
+
+    .form {
+      width: 100%;
+      .input {
+        width: 90%;
+        &.textarea {
+          height: 15rem;
+        }
+      }
+      .send {
+        width: 70%;
+        margin: 15px 0;
+      }
+    }
+  }
+}

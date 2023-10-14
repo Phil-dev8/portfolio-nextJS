@@ -20,3 +20,14 @@
     position: relative;
   }
 }
+
+@media (max-width: $phone) {
+  .footer {
+    font-size: 14px;
+    position: relative;
+    &.skill-page {
+      margin: 0;
+      padding-bottom: 10px;
+    }
+  }
+}

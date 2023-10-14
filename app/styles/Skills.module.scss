@@ -36,6 +36,9 @@
     }
   }
 }
+.certifs-mobile {
+  display: none;
+}
 .certifs {
   position: fixed;
   border: dashed 2px $turquoise;
@@ -60,11 +63,54 @@
     @include link-transition;
     span {
       font-style: italic;
-
       color: $orange;
     }
     &:hover {
       color: $orange;
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .main-title {
+    @include title-mobile;
+  }
+  .container {
+    .category-container {
+      width: 80%;
+      gap: 15px;
+      padding: 15px;
+    }
+    .second-title {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .skill-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .certifs {
+    display: none;
+  }
+  .certifs-mobile {
+    border: dashed 2px $turquoise;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 8px;
+    width: 85%;
+    .h3 {
+      color: $orange;
+      font-weight: $bold;
+      font-size: $fsm;
+    }
+    a {
+      text-decoration: none;
+      color: $turquoise;
+      font-size: $fsl;
     }
   }
 }

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import data from "../../assets/data/projects.json";
-import Image from "next/image";
 import styles from "../../styles/ProjectCard.module.scss";
 import Link from "next/link";
 
@@ -10,12 +9,6 @@ function ProjectCard() {
     <>
       {data.map((project) => (
         <div className={styles.card} key={project.id}>
-          {/* <Image
-            src={project.img}
-            width={150}
-            height={100}
-            alt={project.name}
-          /> */}
           <div className={styles.infos}>
             <h3 className={styles.name}>{project.name}</h3>
             {project["front-repo"] ? (

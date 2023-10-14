@@ -1,7 +1,6 @@
 @import "variables";
 
 .container {
-  padding-top: 80px;
   width: 55%;
   display: flex;
   flex-direction: column;
@@ -10,12 +9,7 @@
   margin: 0 auto;
 
   .main_title {
-    margin-bottom: 100px;
-    font-size: $fsb;
-    font-weight: $bold;
-    text-align: center;
-    color: $orange;
-    animation: left 0.7s ease, color 0.7s ease-in-out infinite alternate;
+    @include title;
   }
 
   .presentation {
@@ -33,6 +27,19 @@
       animation: link 0.7s infinite alternate;
       text-decoration: none;
       font-style: italic;
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .container {
+    width: 80%;
+    .main_title {
+      @include title-mobile;
+    }
+    .presentation {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }
