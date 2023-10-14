@@ -23,7 +23,7 @@ export default function Home() {
               {" "}
               Le Reacteur
             </Link>{" "}
-            m'a permis d'acquérir des compétences en{" "}
+            m&apos;a permis d&apos;acquérir des compétences en{" "}
             <span>JavaScript, HTML/CSS, React.js, Node.js</span> (et d’autres).
             De plus j’ai eu l’opportunité d’effectuer un stage chez{" "}
             <Link
@@ -43,11 +43,11 @@ export default function Home() {
             <span>curieux</span> pour pratiquer une veille constante sur les
             nouvelles techs, <span>persévérant</span> pour debuger mon code, je
             dispose également d’un <span>bon relationnel</span> grâce à mon
-            expérience de commerçant afin d'être à l’écoute des différentes
-            cellules d’une entreprise me permettant de rapidement comprendre
-            leurs besoins. Je suis disponible pour un entretien pour vous faire
-            part de ma forte motivation ainsi que discuter de mon parcours
-            atypique et de mes compétences.
+            expérience de commerçant afin d&apos;être à l&apos;écoute des
+            différentes cellules d’une entreprise me permettant de rapidement
+            comprendre leurs besoins. Je suis disponible pour un entretien pour
+            vous faire part de ma forte motivation ainsi que discuter de mon
+            parcours atypique et de mes compétences.
           </p>
         </div>
       </div>
