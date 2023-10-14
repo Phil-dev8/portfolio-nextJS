@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "../styles/Contact.module.scss";
 import emailjs from "emailjs-com";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function Contact() {
   const [firstName, setfirstName] = useState("");
@@ -12,6 +13,49 @@ export default function Contact() {
 
   const handleInputChange = (event, setStateFunction) => {
     setStateFunction(event.target.value);
+  };
+  const notify = () => {
+    toast.success("Message envoyé !", {
+      duration: 2500,
+      position: "bottom-center",
+      style: {
+        border: "2px dashed #ff9200",
+        padding: "16px",
+        color: "#00bbc2",
+        fontWeight: "bold",
+        fontSize: "20px",
+        background: "#003549",
+      },
+      iconTheme: {
+        primary: "#ff9200",
+        secondary: "#003549",
+      },
+    });
+  };
+  const error = () => {
+    toast.error("Veuillez remplir tout les champs.", {
+      duration: 2500,
+      position: "bottom-center",
+      style: {
+        border: "2px dashed #ff9200",
+        padding: "16px",
+        color: "#00bbc2",
+        fontWeight: "bold",
+        fontSize: "20px",
+        background: "#003549",
+      },
+      iconTheme: {
+        primary: "#ff9200",
+        secondary: "#003549",
+      },
+    });
+  };
+
+  const resetForm = () => {
+    setfirstName("");
+    setlastName("");
+    setEmail("");
+    setMessage("");
   };
 
   const serviceID = process.env.SERVICE_ID;
@@ -31,11 +75,17 @@ export default function Contact() {
 
   const submit = (event) => {
     event.preventDefault();
-    const data = {
-      from_name: `${firstName} ${lastName}`,
-      message: message,
-    };
-    mail(data);
+    if (firstName && lastName && email && message) {
+      const data = {
+        from_name: `${firstName} ${lastName}`,
+        message: message,
+      };
+      mail(data);
+      resetForm();
+      notify();
+    } else {
+      error();
+    }
   };
 
   return (
@@ -79,6 +129,7 @@ export default function Contact() {
           />
         </form>
       </div>
+      <Toaster />
     </>
   );
 }
