@@ -8,6 +8,10 @@
   background-color: $secondary;
   animation: top ease-in-out 1s;
 
+  .drop-down-menu {
+    display: none;
+  }
+
   .nav {
     display: flex;
     gap: 250px;
@@ -20,6 +24,46 @@
       @include link-transition;
       &:hover {
         color: $turquoise;
+      }
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    z-index: 1000;
+
+    .nav {
+      display: none;
+    }
+    .drop-down-menu {
+      display: block;
+      .mobile-menu {
+        display: none;
+        &.open {
+          background-color: $primary;
+          display: flex;
+          width: 50%;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 20%;
+          animation: left 1s ease;
+          gap: 5px;
+          border: dashed 1px $orange;
+          padding: 5px;
+        }
+        .link {
+          text-decoration: none;
+          font-size: 1.8rem;
+          color: $turquoise;
+        }
       }
     }
   }
