@@ -7,6 +7,18 @@ import SkillCard from "../components/SkillCard/SkillCard";
 export default function skills() {
   return (
     <>
+      <div className={styles.certifs}>
+        <h3 className={styles.h3}>Certifications Udemy ( PDF )</h3>
+        <a href="/assets/certifications/JS.pdf" target="blank">
+          Javascript
+        </a>
+        <a href="/assets/certifications/GIT.pdf" target="blank">
+          GIT
+        </a>
+        <a href="/assets/certifications/NEXT.pdf" target="blank">
+          Next.js
+        </a>
+      </div>
       <h1 className={styles["main-title"]}>Skills</h1>
       <div className={styles.container}>
         {data.map((category, categoryIndex) => {
@@ -25,18 +37,6 @@ export default function skills() {
             </div>
           );
         })}
-        <div className={styles.certifs}>
-          <h3 className={styles.h3}>Certifications Udemy</h3>
-          <a href="/assets/certifications/JS.pdf" target="blank">
-            Javascript
-          </a>
-          <a href="/assets/certifications/GIT.pdf" target="blank">
-            GIT
-          </a>
-          <a href="/assets/certifications/NEXT.pdf" target="blank">
-            Next.js
-          </a>
-        </div>
       </div>
     </>
   );
