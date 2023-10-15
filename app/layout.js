@@ -3,7 +3,7 @@ import { Georama } from "next/font/google";
 import Header from "./components/Header/Header";
 import Socials from "./components/Socials/Socials";
 import Footer from "./components/Footer/Footer";
-import { Analytics } from "@vercel/analytics";
+import { Analytics } from "@vercel/analytics/react";
 
 const georama = Georama({ subsets: ["latin"] });
 
