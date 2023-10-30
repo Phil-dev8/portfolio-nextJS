@@ -31,3 +31,9 @@
     }
   }
 }
+
+@media (min-width: $phone) and (max-width: $desktop) {
+  .footer {
+    position: unset;
+  }
+}

@@ -10,12 +10,12 @@ import LinkedinSVG from "../SVG/LinkedinSVG/LinkedinSVG";
 function Socials() {
   return (
     <div className={styles.social}>
-      <a href="/assets/CV-3W.pdf" target="blank">
-        <CVSVG />
-      </a>
       <Link href="https://github.com/Phil-dev8" target="blank">
         <GithubSVG />
       </Link>
+      <a href="/assets/CV-3W.pdf" target="blank">
+        <CVSVG />
+      </a>
       <Link href="https://www.linkedin.com/in/phil-dev8/" target="blank">
         <LinkedinSVG />
       </Link>

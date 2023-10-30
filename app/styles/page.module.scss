@@ -43,3 +43,12 @@
     }
   }
 }
+
+@media (min-width: $phone) and (max-width: $desktop) {
+  .container {
+    width: 80%;
+    .main_title {
+      font-size: 36px;
+    }
+  }
+}

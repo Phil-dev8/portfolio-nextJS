@@ -118,7 +118,7 @@ export default function Contact() {
             rows={10}
             className={`${styles.input} ${styles.textarea}`}
             type="text"
-            placeholder="Message"
+            // placeholder="Message"
             value={message}
             onChange={(event) => handleInputChange(event, setMessage)}
           />

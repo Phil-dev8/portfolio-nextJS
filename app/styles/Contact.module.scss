@@ -86,3 +86,16 @@
     }
   }
 }
+
+@media (min-width: $phone) and (max-width: $desktop) {
+  .container {
+    .form {
+      .input {
+        width: 75%;
+      }
+      .send {
+        width: 70%;
+      }
+    }
+  }
+}

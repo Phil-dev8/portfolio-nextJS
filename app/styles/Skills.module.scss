@@ -112,3 +112,38 @@
     }
   }
 }
+
+@media (min-width: $phone) and (max-width: $desktop) {
+  .container {
+    .category-container {
+      width: 80%;
+    }
+    .skill-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .certifs {
+    display: none;
+  }
+  .certifs-mobile {
+    border: dashed 2px $turquoise;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 8px;
+    width: 81%;
+    .h3 {
+      color: $orange;
+      font-weight: $bold;
+      font-size: $fsm;
+    }
+    a {
+      text-decoration: none;
+      color: $turquoise;
+      font-size: $fsl;
+    }
+  }
+}

@@ -38,6 +38,7 @@
     justify-content: flex-start;
     padding: 10px;
     z-index: 1000;
+    height: 7vh;
 
     .nav {
       display: none;
@@ -94,6 +95,16 @@
         top: 10px;
         right: 15px;
       }
+    }
+  }
+}
+
+@media (min-width: $phone) and (max-width: $desktop) {
+  .header {
+    height: 50px;
+    .nav {
+      justify-content: center;
+      gap: 18%;
     }
   }
 }

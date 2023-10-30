@@ -11,3 +11,9 @@
     height: 60px;
   }
 }
+@media (min-width: $phone) and (max-width: $desktop) {
+  .svg {
+    width: 90px;
+    height: 90px;
+  }
+}
