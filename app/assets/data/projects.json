@@ -1,7 +1,20 @@
 [
   {
-    "name": "Vinted",
+    "name": "FunFood",
     "id": 1,
+    "img": "",
+    "front-repo": "https://github.com/Phil-dev8/random-food",
+    "back-repo": "",
+    "production": "https://phil8-funfood.netlify.app/",
+    "technos": ["HTML 5", "CSS 3", "JavaScript", "Adobe XD"],
+    "description": [
+      "Intégration HTML à partir de maquette",
+      "Script JavaScript"
+    ]
+  },
+  {
+    "name": "Vinted",
+    "id": 2,
     "img": "/assets/img/vinted.svg",
     "front-repo": "https://github.com/Phil-dev8/Vinted-homework-14-02",
     "back-repo": "",
@@ -17,7 +30,7 @@
   },
   {
     "name": "Marvel",
-    "id": 2,
+    "id": 3,
     "img": "/assets/img/marvel.png",
     "front-repo": "https://github.com/Phil-dev8/frontend-marvel",
     "back-repo": "https://github.com/Phil-dev8/Backend-Marvel",
@@ -40,12 +53,12 @@
   },
   {
     "name": "Barret's",
-    "id": 3,
+    "id": 4,
     "img": "",
     "front-repo": "",
     "back-repo": "",
     "production": "",
-    "technos": ["Next.js"],
+    "technos": ["Next.js", "Mongo DB", "Forest Admin"],
     "description": ["Création d'un site e-commerce pour société d'outillage"]
   }
 ]
